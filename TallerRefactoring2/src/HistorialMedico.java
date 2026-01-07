@@ -10,8 +10,8 @@ public class HistorialMedico {
         this.recetasMedicas = new ArrayList<>();
     }
 
-    public List<Consulta> getConsultas() {
-        return consultas;
+    public void agregarConsulta(Consulta consulta) {
+        consultas.add(consulta);
     }
 
     public void setConsultas(List<Consulta> consultas) {

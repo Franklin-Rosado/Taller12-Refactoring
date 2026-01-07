@@ -45,7 +45,7 @@ public class ServicioMedico {
     }
 
     public void setDuracion(int duracion) {
-
-        this.duracion = duracion;
+        if (duracion<=0) return;
+        this.duracion= duracion;
     }
 }
