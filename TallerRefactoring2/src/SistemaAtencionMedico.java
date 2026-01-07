@@ -25,7 +25,7 @@ public class SistemaAtencionMedico {
     }
 
     public void agendarConsulta(Paciente paciente, Consulta consulta){
-        double costoConsulta = consulta.getServicioMedico().getCosto();
+        double costoConsulta = consulta.getServicioMedico().getCosto().getValor();
         int edadPaciente = paciente.getEdad();
         costoConsulta = calcularValorFinalConsulta(costoConsulta,edadPaciente);
         System.out.println("Se han cobrado "+ costoConsulta+ " dolares de su tarjeta de credito");
