@@ -16,7 +16,7 @@ public class Main{
         sistemaAtencionMedica = new SistemaAtencionMedico();
         Paciente paciente = new Paciente("Dario",21,"Masculino","Floresta 2","0948759754","dlaborde@espol.edu.ec");
         Medico medico = new Medico("Nohelia",20,"Femenino","Duran","0991459625","nohePasaca@espol.edu.ec");
-        ServicioMedico servicioMedico = new ServicioMedico("Psiquiatria","rama que trata problemas mentales",45.5,40);
+        ServicioMedico servicioMedico = new ServicioMedico("Psiquiatria","rama que trata problemas mentales",new Costo(45.5),40);
         sistemaAtencionMedica.agregarPaciente(paciente);
         sistemaAtencionMedica.agregarMedico(medico);
         sistemaAtencionMedica.agregarServicioMedico(servicioMedico);
