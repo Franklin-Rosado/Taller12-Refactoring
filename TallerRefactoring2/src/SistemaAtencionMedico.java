@@ -27,11 +27,11 @@ public class SistemaAtencionMedico {
     }
 
     public void agendarConsulta(Paciente paciente, Consulta consulta){
-        double costoConsulta = consulta.getServicioMedico().getCosto();
+        double costoConsulta = consulta.getServicioMedico().getCosto().getValor();
         int edadPaciente = paciente.getEdad();
         costoConsulta = calcularValorFinalConsulta(costoConsulta,edadPaciente);
         System.out.println("Se han cobrado "+ costoConsulta+ " dolares de su tarjeta de credito");
-        paciente.historialMedico.getConsultas().add(consulta); //Hacer esto es incorrecto
+        paciente.historialMedico.agregarConsulta(consulta);
     }
 
     public double calcularValorFinalConsulta(double costoConsulta, int edadPaciente){
